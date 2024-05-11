@@ -351,11 +351,8 @@ class Robot:
         --------
             np_perp: np.array - perpendicular vector
         """
-        # d_ab = np.linalg.norm(a-b)
         d_ab = Robot.calc_norm_dis(b, a)
-        # d_ax = np.linalg.norm(a-x)
         d_ax = Robot.calc_norm_dis(x, a)
-        # d_bx = np.linalg.norm(b-x)
         d_bx = Robot.calc_norm_dis(x, b)
 
         # if a and b are different points
